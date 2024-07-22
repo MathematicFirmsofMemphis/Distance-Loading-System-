@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Bar</title>
+    <style>
+        .loading-container {
+            width: 100%;
+            background-color: #f3f3f3;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            margin: 20px auto;
+            max-width: 600px;
+        }
+
+        .loading-bar {
+            width: 0%;
+            height: 30px;
+            background-color: #4caf50;
+            text-align: center;
+            color: white;
+            line-height: 30px; /* Center text vertically */
+            border-radius: 5px;
+            transition: width 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="loading-container">
+        <div class="loading-bar" id="loadingBar1">0%</div>
+    </div>
+    <div class="loading-container">
+        <div class="loading-bar" id="loadingBar2">0%</div>
+    </div>
+    <div class="loading-container">
+        <div class="loading-bar" id="loadingBar3">0%</div>
+    </div>
+    <div class="loading-container">
+        <div class="loading-bar" id="loadingBar4">0%</div>
+    </div>
+    <div class="loading-container">
+        <div class="loading-bar" id="loadingBar5">0%</div>
+    </div>
+    <div class="loading-container">
+        <div class="loading-bar" id="loadingBar6">0%</div>
+    </div>
+    <div class="loading-container">
+        <div class="loading-bar" id="loadingBar7">0%</div>
+    </div>
+    <div class="loading-container">
+        <div class="loading-bar" id="loadingBar8">0%</div>
+    </div>
+    <div class="loading-container">
+        <div class="loading-bar" id="loadingBar9">0%</div>
+    </div>
+    <div class="loading-container">
+        <div class="loading-bar" id="loadingBar10">0%</div>
+    </div>
+    <div class="loading-container">
+        <div class="loading-bar" id="loadingBar11">0%</div>
+    </div>
+    <div class="loading-container">
+        <div class="loading-bar" id="loadingBar12">0%</div>
+    </div>
+    <div class="loading-container">
+        <div class="loading-bar" id="loadingBar13">0%</div>
+    </div>
+    <div class="loading-container">
+        <div class="loading-bar" id="loadingBar14">0%</div>
+    </div>
+    <div class="loading-container">
+        <div class="loading-bar" id="loadingBar15">0%</div>
+    </div>
+    <div class="loading-container">
+        <div class="loading-bar" id="loadingBar16">0%</div>
+    </div>
+    <div class="loading-container">
+        <div class="loading-bar" id="loadingBar17">0%</div>
+    </div>
+    <div class="loading-container">
+        <div class="loading-bar" id="loadingBar18">0%</div>
+    </div>
+    <div class="loading-container">
+        <div class="loading-bar" id="loadingBar19">0%</div>
+    </div>
+    <div class="loading-container">
+        <div class="loading-bar" id="loadingBar20">0%</div>
+    </div>
+
+    <script>
+        function simulateLoading() {
+            var elem1 = document.getElementById("loadingBar1");
+            var elem2 = document.getElementById("loadingBar2");
+            var elem3 = document.getElementById("loadingBar3");
+            var elem4 = document.getElementById("loadingBar4");
+            var elem5 = document.getElementById("loadingBar5");
+            var elem6 = document.getElementById("loadingBar6");
+            var elem7 = document.getElementById("loadingBar7");
+            var elem8 = document.getElementById("loadingBar8");
+            var elem9 = document.getElementById("loadingBar9");
+            var elem10 = document.getElementById("loadingBar10");
+            var elem11 = document.getElementById("loadingBar11");
+            var elem12 = document.getElementById("loadingBar12");
+            var elem13 = document.getElementById("loadingBar13");
+            var elem14 = document.getElementById("loadingBar14");
+            var elem15 = document.getElementById("loadingBar15");
+            var elem16 = document.getElementById("loadingBar16");
+            var elem17 = document.getElementById("loadingBar17");
+            var elem18 = document.getElementById("loadingBar18");
+            var elem19 = document.getElementById("loadingBar19");
+            var elem20 = document.getElementById("loadingBar20");
+            
+            var width = 0;
+            var interval = setInterval(function () {
+                if (width >= 100) {
+                    clearInterval(interval);
+                    elem1.innerHTML = "You have arrived";
+                    elem2.innerHTML = "Engines Nominal";
+                    elem3.innerHTML = "Exited";
+                    elem4.innerHTML = "Pathfinding Complete";
+                    elem5.innerHTML = "Number One Complete";
+                    elem6.innerHTML = "Complete";
+                    elem7.innerHTML = "Complete";
+                    elem8.innerHTML = "Complete";
+                    elem9.innerHTML = "Complete";
+                    elem10.innerHTML = "Complete";
+                    elem11.innerHTML = "Complete";
+                    elem12.innerHTML = "Complete";
+                    elem13.innerHTML = "Complete";
+                    elem14.innerHTML = "Complete";
+                    elem15.innerHTML = "Complete";
+                    elem16.innerHTML = "Complete";
+                    elem17.innerHTML = "Complete";
+                    elem18.innerHTML = "Complete";
+                    elem19.innerHTML = "Complete";
+                    elem20.innerHTML = "Complete";
+                } else {
+                    width++;
+                    elem1.style.width = width + '%';
+                    elem1.innerHTML = width + '%';
+                    elem2.style.width = width + '%';
+                    elem2.innerHTML = width + '%';
+                    elem3.style.width = width + '%';
+                    elem3.innerHTML = width + '%';
+                    elem4.style.width = width + '%';
+                    elem4.innerHTML = width + '%';
+                    elem5.style.width = width + '%';
+                    elem5.innerHTML = width + '%';
+                    elem6.style.width = width + '%';
+                    elem6.innerHTML = width + '%';
+                    elem7.style.width = width + '%';
+                    elem7.innerHTML = width + '%';
+                    elem8.style.width = width + '%';
+                    elem8.innerHTML = width + '%';
+                    elem9.style.width = width + '%';
+                    elem9.innerHTML = width + '%';
+                    elem10.style.width = width + '%';
+                    elem10.innerHTML = width + '%';
+                    elem11.style.width = width + '%';
+                    elem11.innerHTML = width + '%';
+                    elem12.style.width = width + '%';
+                    elem12.innerHTML = width + '%';
+                    elem13.style.width = width + '%';
+                    elem13.innerHTML = width + '%';
+                    elem14.style.width = width + '%';
+                    elem14.innerHTML = width + '%';
+                    elem15.style.width = width + '%';
+                    elem15.innerHTML = width + '%';
+                    elem16.style.width = width + '%';
+                    elem16.innerHTML = width + '%';
+                    elem17.style.width = width + '%';
+                    elem17.innerHTML = width + '%';
+                    elem18.style.width = width + '%';
+                    elem18.innerHTML = width + '%';
+                    elem19.style.width = width + '%';
+                    elem19.innerHTML = width + '%';
+                    elem20.style.width = width + '%';
+                    elem20.innerHTML = width + '%';
+                }
+            }, 50); // Adjust the interval time to speed up/slow down loading
+        }
+
+        // Simulate loading when the page loads
+        window.onload = simulateLoading;
+    </script>
+</body>
+</html>
